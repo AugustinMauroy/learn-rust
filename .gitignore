@@ -1,0 +1,5 @@
+# OS-x
+.DS_Store
+
+# rust build
+*/main
