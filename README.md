@@ -20,6 +20,6 @@ rm -rf ./**/main
 
 ## Format
 
-``bash
+```bash
 rustfmt ./**/main.rs
 ```

@@ -63,5 +63,5 @@ fn evaluate(tokens: &[String]) -> f64 {
         }
     }
 
-    return stack.pop().unwrap() // pop().unwrap() will return the last element of the stack
+    return stack.pop().unwrap(); // pop().unwrap() will return the last element of the stack
 }
