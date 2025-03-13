@@ -48,7 +48,7 @@ fn evaluate(tokens: &[String]) -> f64 {
 
     for token in tokens {
         if is_number(token) {
-            stack.push(token.parse().unwrap());
+            stack.push(token.parse::<f64>().unwrap());
         } else {
             let b = stack.pop().unwrap();
             let a = stack.pop().unwrap();
@@ -65,3 +65,4 @@ fn evaluate(tokens: &[String]) -> f64 {
 
     return stack.pop().unwrap(); // pop().unwrap() will return the last element of the stack
 }
+
