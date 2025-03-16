@@ -5,12 +5,9 @@ fn main() {
 
     println!("Enter your name");
 
-    io::stdin()
-        .read_line(&mut name)
-        .unwrap();
+    io::stdin().read_line(&mut name).unwrap();
 
     let name = name.trim();
 
     println!("Hello {} !", name);
 }
-
