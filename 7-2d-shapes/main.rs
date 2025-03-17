@@ -61,14 +61,14 @@ impl Vector {
 }
 
 fn tests_point() {
-		println!("--- Point tests ---");
+    println!("--- Point tests ---");
     let p1 = Point::origin();
     let p2 = Point::new(1.0, 1.0);
     let p3 = Point::new(2.0, 2.0);
 
     println!("{:?} should be (0, 0)", p1);
-		println!("{:?} should be (1, 1)", p2);
-		println!("{:?} should be (2, 2)", p3);
+    println!("{:?} should be (1, 1)", p2);
+    println!("{:?} should be (2, 2)", p3);
 
     let p4 = p2.add(&p3);
     println!("{:?} should be (3, 3)", p4);
@@ -81,7 +81,7 @@ fn tests_point() {
 }
 
 fn tests_vector() {
-		println!("--- Vector tests ---");
+    println!("--- Vector tests ---");
     let v1 = Vector::new(1.0, 1.0);
     let v2 = Vector::new(1.0, -1.0);
 
@@ -97,5 +97,5 @@ fn tests_vector() {
 
 fn main() {
     tests_point();
-		tests_vector();
+    tests_vector();
 }
